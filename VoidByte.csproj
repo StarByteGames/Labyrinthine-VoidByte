@@ -1,0 +1,485 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<RootNamespace>VoidByte</RootNamespace>
+		<LangVersion>default</LangVersion>
+		<IsPackable>false</IsPackable>
+		<AssemblyVersion>1.0.0.0</AssemblyVersion>
+		<FileVersion>1.0.0.0</FileVersion>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<AssemblyName>VoidByte</AssemblyName>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="MelonLoader">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\net6\MelonLoader.dll</HintPath>
+		</Reference>
+		<Reference Include="0Harmony">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\net6\0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppInterop.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\net6\Il2CppInterop.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppInterop.Common">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\net6\Il2CppInterop.Common.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp-firstpass">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Assembly-CSharp-firstpass.dll</HintPath>
+		</Reference>
+		<Reference Include="Assembly-CSharp">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Assembly-CSharp.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppACTk.Examples.Genuine.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppACTk.Examples.Genuine.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppACTk.Examples.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppACTk.Examples.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppACTk.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppACTk.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppAmplifyImpostors">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppAmplifyImpostors.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppAwesomeTechnologies.TouchReactSystemPro.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppAwesomeTechnologies.TouchReactSystemPro.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppAwesomeTechnologies.VegetationStudioPro.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppAwesomeTechnologies.VegetationStudioPro.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppBakeryRuntimeAssembly">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppBakeryRuntimeAssembly.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppBehaviorDesigner.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppBehaviorDesigner.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppBezierSolution.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppBezierSolution.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2Cppcom.rlabrecque.steamworks.net">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2Cppcom.rlabrecque.steamworks.net.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppDissonanceVoip">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppDissonanceVoip.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppDOTween">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppDOTween.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppEasyButtons">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppEasyButtons.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppEdgegap">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppEdgegap.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppFizzySteamworks">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppFizzySteamworks.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppGPUInstancer">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppGPUInstancer.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppGrabbitAssembly">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppGrabbitAssembly.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2Cppkcp2k">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2Cppkcp2k.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppLightingTools.LightProbesVolumes">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppLightingTools.LightProbesVolumes.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMirror.Authenticators">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppMirror.Authenticators.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMirror.BouncyCastle.Cryptography">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppMirror.BouncyCastle.Cryptography.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMirror.Components">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppMirror.Components.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMirror">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppMirror.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMirror.Examples">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppMirror.Examples.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMirror.Transports">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppMirror.Transports.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppMono.Security">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppMono.Security.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2Cppmscorlib">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2Cppmscorlib.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppNewtonsoft.Json">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppNewtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSimpleWebTransport">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSimpleWebTransport.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSteamVR">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSteamVR.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSteamVR_Actions">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSteamVR_Actions.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Configuration">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Core">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Data">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Data.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Drawing">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Drawing.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Globalization">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Globalization.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Net.Http">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Net.Http.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Numerics">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Numerics.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Runtime.Serialization">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Runtime.Serialization.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Xml">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppSystem.Xml.Linq">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppSystem.Xml.Linq.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppTelepathy">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppTelepathy.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppUModelerCommon">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppUModelerCommon.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppValve.Newtonsoft.Json">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppValve.Newtonsoft.Json.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2Cppvhacd">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2Cppvhacd.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2CppWhinarn.UnityMeshSimplifier.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2CppWhinarn.UnityMeshSimplifier.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Il2Cpp__Generated">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Il2Cpp__Generated.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.2D.Tilemap.Extras">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.2D.Tilemap.Extras.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Addressables">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Addressables.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.AI.Navigation">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.AI.Navigation.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Analytics.StandardEvents">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Analytics.StandardEvents.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Animation.Rigging">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Animation.Rigging.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Burst.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Burst.Unsafe">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Burst.Unsafe.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Collections">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Collections.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Mathematics">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Mathematics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Polybrush">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Polybrush.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Postprocessing.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.Core.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.HighDefinition.Config.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.HighDefinition.Config.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.RenderPipelines.HighDefinition.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.RenderPipelines.HighDefinition.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.ResourceManager">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.ResourceManager.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Analytics">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Analytics.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Configuration">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Configuration.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Device">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Device.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Environments.Internal">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Environments.Internal.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Internal">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Internal.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Registration">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Registration.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Scheduler">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Scheduler.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Telemetry">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Telemetry.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Services.Core.Threading">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Threading.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.TextMeshPro">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.Timeline">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.Timeline.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.VisualEffectGraph.Runtime">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.VisualEffectGraph.Runtime.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.Management">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.XR.Management.dll</HintPath>
+		</Reference>
+		<Reference Include="Unity.XR.OpenVR">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\Unity.XR.OpenVR.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AccessibilityModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.AccessibilityModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AIModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.AIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AndroidJNIModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.AndroidJNIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AnimationModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.AnimationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ARModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.ARModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AssetBundleModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.AssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.AudioModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.AudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ClothModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.ClothModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ContentLoadModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.ContentLoadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.CrashReportingModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.CrashReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DirectorModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.DirectorModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.DSPGraphModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.DSPGraphModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GameCenterModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.GameCenterModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GIModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.GIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.GridModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.GridModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.HotReloadModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.HotReloadModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ImageConversionModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputLegacyModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.InputModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.InputModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.JSONSerializeModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.LocalizationModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.LocalizationModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ParticleSystemModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PerformanceReportingModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.PerformanceReportingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.Physics2DModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.Physics2DModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PhysicsModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ProfilerModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.ProfilerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.PropertiesModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.PropertiesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.ScreenCaptureModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.ScreenCaptureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SharedInternalsModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpatialTracking">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteMaskModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteMaskModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SpriteShapeModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteShapeModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.StreamingModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.StreamingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubstanceModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.SubstanceModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.SubsystemsModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.SubsystemsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TerrainPhysicsModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreFontEngineModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextCoreTextEngineModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TilemapModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.TilemapModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.TLSModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.TLSModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UI">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIElementsModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UIElementsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UIModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UmbraModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UmbraModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityAnalyticsModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityConnectModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityConnectModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityCurlModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityCurlModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityTestProtocolModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestAudioModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestTextureModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.UnityWebRequestWWWModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VehiclesModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.VehiclesModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VFXModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.VFXModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VideoModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.VideoModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.VRModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.VRModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.WindModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.WindModule.dll</HintPath>
+		</Reference>
+		<Reference Include="UnityEngine.XRModule">
+			<HintPath>d:\SteamLibrary\steamapps\common\Labyrinthine\MelonLoader\Il2CppAssemblies\UnityEngine.XRModule.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+		<EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="*.cs" />
+		<Compile Include="Utilities/*.cs" />
+		<Compile Include="Properties/*.cs" />
+		<Compile Include="Menus/*.cs" />
+	</ItemGroup>
+	
+	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
+		<Exec Command="COPY &quot;$(TargetPath)&quot; &quot;d:\SteamLibrary\steamapps\common\Labyrinthine\Mods&quot;" />
+	</Target>
+</Project>
