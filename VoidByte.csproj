@@ -476,7 +476,7 @@
 		<Compile Include="*.cs" />
 		<Compile Include="Utilities/*.cs" />
 		<Compile Include="Properties/*.cs" />
-		<Compile Include="Menus/*.cs" />
+		<Compile Include="Cheat/*.cs" />
 	</ItemGroup>
 	
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
